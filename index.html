@@ -1,186 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iMatchOJT</title>
-
-    <link rel="stylesheet" href="css/homepage/style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfafb">
+  <meta name="description" content="Explore iMatchOJT, the student-built AI-powered internship placement, monitoring and document compliance system for PUP Santa Rosa Campus.">
+  <title>iMatchOJT | Making the OJT Journey Simpler</title>
+  <link rel="stylesheet" href="css/homepage/style.css">
+  <script src="js/homepage/script.js" defer></script>
 </head>
-
 <body>
-
-<header>
-    <div class="logo">
-        <h2><span>iMatch</span>OJT</h2>
-        <small>AI Powered OJT Placement and Monitoring System</small>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="icon-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M5 19 19 5M8 5h11v11"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="m12 2 2.3 7.7L22 12l-7.7 2.3L12 22l-2.3-7.7L2 12l7.7-2.3L12 2Z"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M7 3h7l5 5v12a1 1 0 0 1-1 1H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M14 3v6h5M9 13h6M9 17h6"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h17M8 17v-5m5 5V8m5 9V5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 19v-2a5 5 0 0 1 10 0v2M16 5a3 3 0 0 1 0 6M16 14a4 4 0 0 1 5 4v1"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 2 8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4Z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5L2 9Zm4 3v5c3 3 9 3 12 0v-5M22 9v7"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 21v-5h6v5M8 7h1m6 0h1M8 11h1m6 0h1"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6c-3-2-7-2-10-1v14c3-1 7-1 10 1 3-2 7-2 10-1V5c-3-1-7-1-10 1ZM12 6v14"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m5 5 14 14M19 5 5 19"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-6.5 10-6.5S22 12 22 12s-3.5 6.5-10 6.5S2 12 2 12Z"/><circle cx="12" cy="12" r="2.6"/></symbol>
+  </svg>
+  <div id="scroll-indicator" aria-hidden="true"></div>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="iMatchOJT homepage"><span class="brand-icon" aria-hidden="true"><svg class="icon"><use href="#i-cap"/></svg></span><span class="brand-name">iMatch<span>OJT</span></span><span class="brand-divider"></span><span class="brand-campus">PUP Santa Rosa</span></a>
+      <nav class="desktop-nav" aria-label="Main navigation"><a class="nav-link" href="#about">About</a><a class="nav-link" href="#features">Features</a><a class="nav-link" href="#showcase">Preview</a><a class="nav-link" href="#how-it-works">How it works</a><a class="nav-link" href="#creators">Creators</a></nav>
+      <a class="nav-cta" href="#features">Explore iMatchOJT <svg class="icon"><use href="#i-arrow-up"/></svg></a>
+      <button class="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open navigation"><svg class="icon menu-lines"><use href="#i-menu"/></svg><svg class="icon menu-cross"><use href="#i-close"/></svg></button>
     </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden><a href="#about">About</a><a href="#features">Features</a><a href="#showcase">System preview</a><a href="#how-it-works">How it works</a><a href="#creators">Creators</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid-lines" aria-hidden="true"></div>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-inner container">
+        <div class="hero-pill anim-rise"><span class="pill-spark"><svg class="icon"><use href="#i-sparkle"/></svg></span> THE FUTURE OF OJT, MADE SIMPLER <span class="pill-mini-dot"></span></div>
+        <h1 id="hero-title" class="hero-title"><span class="title-line anim-rise">Your OJT journey.</span><span class="title-line title-gradient anim-rise">A little less complicated.</span></h1>
+        <p class="hero-lead anim-rise">Meet <strong>iMatchOJT</strong>, an AI-powered platform that brings internship opportunities, training progress, and OJT requirements together for the PUP Santa Rosa community.</p>
+        <div class="hero-actions anim-rise"><a class="button button-primary" href="#features">Explore the features <svg class="icon"><use href="#i-arrow"/></svg></a><a class="button button-ghost" href="#how-it-works"><span class="button-play">▶</span> See how it works</a></div>
+        <p class="hero-proof anim-rise"><svg class="icon"><use href="#i-check-circle"/></svg> Student-built for PUP Santa Rosa <span aria-hidden="true">·</span> Designed for the whole OJT process</p>
+        <div class="float-chip float-one" aria-hidden="true"><span class="chip-icon chip-purple"><svg class="icon"><use href="#i-sparkle"/></svg></span><span><b>AI matching</b><small>Suggested opportunities</small></span></div>
+        <div class="float-chip float-two" aria-hidden="true"><span class="chip-icon chip-green"><svg class="icon"><use href="#i-check-circle"/></svg></span><span><b>Requirements</b><small>Easier to manage</small></span></div>
+        <div class="float-chip float-three" aria-hidden="true"><span class="chip-icon chip-blue"><svg class="icon"><use href="#i-chart"/></svg></span><span><b>OJT progress</b><small>Clearer tracking</small></span></div>
+        <div class="hero-scroll-cue anim-rise"><span>SCROLL TO EXPLORE</span><svg class="icon"><use href="#i-arrow"/></svg></div>
+      </div>
+    </section>
 
-    <nav>
-        <a href="#">About</a>
-        <a href="#">Features</a>
-        <a href="#">How It Works</a>
-        <a href="#">Contact</a>
-    </nav>
-
-    <a href="choose_your_fighter.html"    class="login-btn">
-        <i class="fa-regular fa-user"></i> Login
-    </a>
-</header>
-
-
-<section class="hero">
-
-    <div class="left">
-
-        <span class="campus">
-            ⭐ Proudly for PUP Sta. Rosa Campus
-        </span>
-
-        <h1>
-            Smarter Matching.
-            <span>Better Opportunities.</span>
-        </h1>
-
-        <div class="line"></div>
-
-        <p>
-            iMatchOJT uses AI to connect students with the right internship
-            opportunities and streamline OJT monitoring for a more efficient
-            experience.
-        </p>
-
-        <div class="features">
-
-            <div class="feature">
-                <i class="fa-solid fa-brain"></i>
-                <span>AI Matching</span>
-            </div>
-
-            <div class="feature">
-                <i class="fa-solid fa-chart-line"></i>
-                <span>Realtime Monitoring</span>
-            </div>
-
-            <div class="feature">
-                <i class="fa-regular fa-file-lines"></i>
-                <span>Compliance</span>
-            </div>
-
-            <div class="feature">
-                <i class="fa-solid fa-shield"></i>
-                <span>Secure</span>
-            </div>
-
+    <section class="product-spotlight" aria-label="Illustrated iMatchOJT interface preview">
+      <div class="container reveal"><div class="spotlight-caption"><span class="caption-dot"></span> ONE CONNECTED OJT EXPERIENCE <span class="caption-line"></span> AN ILLUSTRATIVE PREVIEW</div>
+        <div class="browser-outer" id="browser-preview">
+          <div class="browser-toolbar"><div class="traffic" aria-hidden="true"><span></span><span></span><span></span></div><div class="browser-address"><svg class="icon"><use href="#i-shield"/></svg> iMatchOJT · Student dashboard preview</div><div class="browser-toolbar-end" aria-hidden="true"><span></span><span></span></div></div>
+          <div class="demo-app">
+            <aside class="demo-sidebar" aria-label="Mock navigation"><div class="demo-logo"><span class="demo-logo-icon"><svg class="icon"><use href="#i-cap"/></svg></span><strong>iMatch<span>OJT</span></strong></div><div class="sidebar-kicker">WORKSPACE</div><div class="demo-nav-item active"><svg class="icon"><use href="#i-chart"/></svg> Dashboard</div><div class="demo-nav-item"><svg class="icon"><use href="#i-briefcase"/></svg> Find internship</div><div class="demo-nav-item"><svg class="icon"><use href="#i-file"/></svg> Requirements</div><div class="demo-nav-item"><svg class="icon"><use href="#i-clock"/></svg> OJT progress</div><div class="demo-side-bottom"><span class="side-avatar">S</span><span>Student view<small>Illustrative interface</small></span></div></aside>
+            <div class="demo-content"><div class="demo-topbar"><span>Student overview <span class="demo-breadcrumb">/ Dashboard</span></span><span class="demo-round">S</span></div><div class="demo-body"><div class="demo-welcome"><div><span class="tiny-overline">YOUR OJT WORKSPACE</span><h2>A clearer path ahead.</h2><p>Keep your internship journey organized in one place.</p></div><span class="demo-label"><svg class="icon"><use href="#i-sparkle"/></svg> Smart recommendations</span></div>
+            <div class="demo-stat-grid"><div class="demo-stat"><span class="stat-ico"><svg class="icon"><use href="#i-briefcase"/></svg></span><span class="stat-small">DISCOVER</span><strong>Find internships</strong><small>Explore relevant opportunities</small></div><div class="demo-stat"><span class="stat-ico ico-blue"><svg class="icon"><use href="#i-file"/></svg></span><span class="stat-small">STAY READY</span><strong>Documents</strong><small>Review your requirements</small></div><div class="demo-stat"><span class="stat-ico ico-green"><svg class="icon"><use href="#i-chart"/></svg></span><span class="stat-small">KEEP MOVING</span><strong>OJT progress</strong><small>Follow training updates</small></div></div>
+            <div class="demo-lower"><div class="demo-recos"><div class="demo-section-title"><b>Internship discovery</b><span>Profile-based suggestions <svg class="icon"><use href="#i-arrow"/></svg></span></div><div class="demo-list"><div class="demo-list-icon"><svg class="icon"><use href="#i-briefcase"/></svg></div><div><b>Explore suitable roles</b><small>Choose internships based on your interests</small></div><span class="demo-tag">MATCHING</span></div><div class="demo-list"><div class="demo-list-icon pale"><svg class="icon"><use href="#i-users"/></svg></div><div><b>Track applications</b><small>Follow each step of company review</small></div><span class="demo-tag">UPDATES</span></div></div><div class="demo-journey"><div class="demo-section-title"><b>My OJT journey</b><span class="journey-ellipsis">•••</span></div><div class="journey-row"><span class="journey-dot done"></span><span>Explore</span><svg class="icon"><use href="#i-check"/></svg></div><div class="journey-row"><span class="journey-dot current"></span><span>Apply &amp; confirm</span><span class="current-pill">NEXT</span></div><div class="journey-row"><span class="journey-dot"></span><span>Monitor &amp; complete</span></div></div></div></div></div>
+          </div>
         </div>
+        <p class="preview-disclaimer">Interface illustration for presentation only. It does not display live student data.</p>
+      </div>
+    </section>
 
-        <img src="images/pup-building.png" class="building">
+    <div class="audience-bar"><div class="container audience-inner"><span>ONE PLATFORM. FOUR IMPORTANT ROLES.</span><div class="audience-names"><span><svg class="icon"><use href="#i-cap"/></svg> Students</span><span><svg class="icon"><use href="#i-building"/></svg> Companies</span><span><svg class="icon"><use href="#i-book"/></svg> Faculty</span><span><svg class="icon"><use href="#i-shield"/></svg> Faculty Heads</span></div></div></div>
 
-    </div>
+    <section class="section about" id="about" aria-labelledby="about-title"><div class="container about-grid"><div class="about-copy reveal"><span class="section-label"><span class="label-mark"></span> 01 / THE IDEA</span><h2 id="about-title">Built for the things that <em>really matter</em> in OJT.</h2><p>Finding a company is only one part of the journey. Students also need to handle applications, documents, OJT hours, and updates. At the same time, companies and faculty have their own responsibilities.</p><p>iMatchOJT brings those tasks together, making the process easier to follow from the first application to the final requirement.</p><a class="underlined-link" href="#how-it-works">Meet the people who use it <svg class="icon"><use href="#i-arrow-up"/></svg></a></div><div class="about-visual reveal"><div class="building-card"><img src="assets/pup-santa-rosa-building.webp" alt="Red and white PUP-inspired campus building provided as a project reference" loading="lazy" width="578" height="313"><div class="building-overlay"><span class="building-dot"></span><span>PUP SANTA ROSA CAMPUS</span><strong>Where the OJT journey begins.</strong></div></div><span class="building-corner" aria-hidden="true">PUP • iMatchOJT</span></div></div></section>
 
+    <section class="section features-section" id="features" aria-labelledby="features-title"><div class="container"><div class="section-heading reveal"><div><span class="section-label"><span class="label-mark"></span> 02 / KEY FEATURES</span><h2 id="features-title">The tools behind a <span>simpler OJT.</span></h2></div><p>Thoughtfully connected features to support students, companies, and faculty throughout the training process.</p></div>
+      <div class="feature-bento">
+        <article class="feature-card feature-featured reveal"><div class="feature-text"><div class="feature-icon"><svg class="icon"><use href="#i-sparkle"/></svg></div><span class="feature-count">01 / SMART RECOMMENDATIONS</span><h3>Find opportunities that fit.</h3><p>AI-powered suggestions help students discover internships based on their profiles, skills, and preferences. Students make the final application choice.</p><span class="feature-audience">FOR STUDENTS</span></div><div class="match-art" aria-hidden="true"><div class="match-art-title"><span class="match-star">✦</span> RECOMMENDED FOR YOU</div><div class="match-row"><span class="match-symbol">IT</span><span><strong>Explore internship roles</strong><small>Skills, program, and interests</small></span><span class="match-percent"><svg class="icon"><use href="#i-sparkle"/></svg></span></div><div class="match-row row-lower"><span class="match-symbol secondary-symbol"><svg class="icon"><use href="#i-briefcase"/></svg></span><span><strong>Discover companies</strong><small>Opportunities that make sense</small></span><span class="match-percent"><svg class="icon"><use href="#i-arrow"/></svg></span></div><div class="match-art-foot">Smart suggestions <span>— Your decision</span></div></div></article>
+        <article class="feature-card reveal"><div class="feature-icon icon-blue"><svg class="icon"><use href="#i-briefcase"/></svg></div><span class="feature-count">02 / PLACEMENT</span><h3>Applications, organized.</h3><p>Track reviews, interview invitations, offers, and student placement confirmations in one clear process.</p><div class="card-visual-process" aria-hidden="true"><span class="progress-step is-done">Applied</span><span class="progress-line"></span><span class="progress-step">Interview</span><span class="progress-line"></span><span class="progress-step">Offer</span></div></article>
+        <article class="feature-card reveal"><div class="feature-icon icon-rose"><svg class="icon"><use href="#i-file"/></svg></div><span class="feature-count">03 / COMPLIANCE</span><h3>No more document confusion.</h3><p>Keep track of required submissions, missing items, and faculty review decisions.</p><div class="document-mini" aria-hidden="true"><div><span class="mini-check"><svg class="icon"><use href="#i-check"/></svg></span> Required OJT document <strong>Reviewed</strong></div><div><span class="mini-file"><svg class="icon"><use href="#i-file"/></svg></span> Weekly DTR <strong class="mini-pending">To submit</strong></div></div></article>
+        <article class="feature-card reveal"><div class="feature-icon icon-green"><svg class="icon"><use href="#i-chart"/></svg></div><span class="feature-count">04 / MONITORING</span><h3>Progress made visible.</h3><p>Students and faculty can follow recorded hours, DTR submissions, and overall training progress.</p><div class="mini-chart" aria-hidden="true"><span style="--bar:42%"></span><span style="--bar:67%"></span><span style="--bar:52%"></span><span style="--bar:84%"></span><span style="--bar:70%"></span><span style="--bar:96%"></span></div></article>
+        <article class="feature-card reveal"><div class="feature-icon icon-purple"><svg class="icon"><use href="#i-users"/></svg></div><span class="feature-count">05 / COORDINATION</span><h3>Everyone stays connected.</h3><p>Support faculty reviews, company evaluations, announcements, and organized communication.</p><div class="mini-avatars" aria-hidden="true"><span><svg class="icon"><use href="#i-cap"/></svg></span><span><svg class="icon"><use href="#i-building"/></svg></span><span><svg class="icon"><use href="#i-book"/></svg></span><span>+1</span></div></article>
+      </div>
+    </div></section>
 
-    <div class="login-card">
+    <section class="section showcase-section" id="showcase" aria-labelledby="showcase-title"><div class="container"><div class="section-heading reveal"><div><span class="section-label"><span class="label-mark"></span> 03 / INSIDE IMATCHOJT</span><h2 id="showcase-title">See what the system <span>brings together.</span></h2></div><p>Explore a few illustrated views of the system's main functions. Actual screens may look different.</p></div><div class="showcase-shell reveal"><div class="showcase-top"><div class="showcase-tabs" role="tablist" aria-label="System feature previews"><button type="button" class="showcase-tab is-active" role="tab" id="s-tab-match" aria-selected="true" aria-controls="s-panel-match" tabindex="0">AI matching</button><button type="button" class="showcase-tab" role="tab" id="s-tab-docs" aria-selected="false" aria-controls="s-panel-docs" tabindex="-1">Documents</button><button type="button" class="showcase-tab" role="tab" id="s-tab-progress" aria-selected="false" aria-controls="s-panel-progress" tabindex="-1">OJT progress</button></div><div class="showcase-label"><span class="live-dot"></span> SYSTEM FEATURE PREVIEW</div></div>
+      <div class="showcase-content"><section class="showcase-panel" role="tabpanel" id="s-panel-match" aria-labelledby="s-tab-match" tabindex="0"><div class="showcase-explainer"><span class="mini-eyebrow">01 / SMART DISCOVERY</span><h3>Relevant internships, easier to find.</h3><p>AI suggestions help students explore internships suited to their skills and goals. Recommendations guide discovery rather than deciding their placement.</p><div class="showcase-points"><span><svg class="icon"><use href="#i-check-circle"/></svg> Student-controlled applications</span><span><svg class="icon"><use href="#i-check-circle"/></svg> Profile-based suggestions</span></div></div><div class="showcase-illustration"><div class="fake-window"><div class="fake-window-head"><span>Suggested opportunities</span><span class="fake-filter">For your profile</span></div><div class="suggested-card"><span class="suggested-icon"><svg class="icon"><use href="#i-briefcase"/></svg></span><div><b>Discover internship roles</b><small>Explore listings from partner companies</small><span class="card-tags"><i>Skills</i><i>Program</i><i>Preferences</i></span></div><span class="small-arrow"><svg class="icon"><use href="#i-arrow-up"/></svg></span></div><div class="suggested-card second"><span class="suggested-icon"><svg class="icon"><use href="#i-users"/></svg></span><div><b>Review and compare</b><small>Choose opportunities that fit your interests</small><span class="card-tags"><i>Your choice</i><i>Apply when ready</i></span></div><span class="small-arrow"><svg class="icon"><use href="#i-arrow-up"/></svg></span></div></div></div></section>
+      <section class="showcase-panel" role="tabpanel" id="s-panel-docs" aria-labelledby="s-tab-docs" tabindex="0" hidden><div class="showcase-explainer"><span class="mini-eyebrow">02 / DOCUMENT COMPLIANCE</span><h3>Know what needs attention.</h3><p>Track required documents, submit records, and follow faculty review without having to guess what comes next.</p><div class="showcase-points"><span><svg class="icon"><use href="#i-check-circle"/></svg> Clear submission status</span><span><svg class="icon"><use href="#i-check-circle"/></svg> Review and feedback tracking</span></div></div><div class="showcase-illustration"><div class="fake-window"><div class="fake-window-head"><span>My requirements</span><span class="fake-filter">Compliance overview</span></div><div class="requirement-row"><span class="req-icon"><svg class="icon"><use href="#i-file"/></svg></span><div><b>Pre-OJT document</b><small>Required submission</small></div><span class="req-approved">Reviewed</span></div><div class="requirement-row"><span class="req-icon"><svg class="icon"><use href="#i-file"/></svg></span><div><b>Weekly DTR</b><small>Training record</small></div><span class="req-waiting">Pending</span></div><div class="requirement-row"><span class="req-icon"><svg class="icon"><use href="#i-file"/></svg></span><div><b>Evaluation form</b><small>Completion requirement</small></div><span class="req-future">Upcoming</span></div></div></div></section>
+      <section class="showcase-panel" role="tabpanel" id="s-panel-progress" aria-labelledby="s-tab-progress" tabindex="0" hidden><div class="showcase-explainer"><span class="mini-eyebrow">03 / TRAINING MONITORING</span><h3>Keep the whole journey in view.</h3><p>See the important milestones, OJT hour records, and progress updates that matter throughout the training period.</p><div class="showcase-points"><span><svg class="icon"><use href="#i-check-circle"/></svg> Training progress overview</span><span><svg class="icon"><use href="#i-check-circle"/></svg> Faculty-verified records</span></div></div><div class="showcase-illustration"><div class="fake-window"><div class="fake-window-head"><span>OJT journey</span><span class="fake-filter">Milestone view</span></div><div class="timeline-row"><span class="timeline-icon is-complete"><svg class="icon"><use href="#i-check"/></svg></span><div><b>Student placement</b><small>Confirmed with faculty</small></div></div><div class="timeline-row"><span class="timeline-icon is-complete"><svg class="icon"><use href="#i-check"/></svg></span><div><b>Training begins</b><small>Start tracking hours and DTRs</small></div></div><div class="timeline-row"><span class="timeline-icon is-next"></span><div><b>Complete your OJT</b><small>Finish requirements and evaluations</small></div></div></div></div></section></div></div></div></section>
 
-        <div class="icon">
-            <i class="fa-solid fa-lock"></i>
-        </div>
+    <section class="section workflow-section" id="how-it-works" aria-labelledby="workflow-title"><div class="container"><div class="section-heading reveal"><div><span class="section-label"><span class="label-mark"></span> 04 / HOW IT WORKS</span><h2 id="workflow-title">One system. <span>Four perspectives.</span></h2></div><p>Choose a role to learn how iMatchOJT supports each part of the OJT process.</p></div>
+    <div class="workflow-grid reveal"><div class="role-tabs" role="tablist" aria-label="Guide by user role" aria-orientation="vertical"><button type="button" class="role-tab is-active" id="role-tab-student" role="tab" aria-selected="true" aria-controls="role-panel-student" tabindex="0"><span class="role-icon"><svg class="icon"><use href="#i-cap"/></svg></span><span class="role-label"><b>OJT Student</b><small>Explore, apply, and complete</small></span><svg class="icon role-chevron"><use href="#i-arrow"/></svg></button><button type="button" class="role-tab" id="role-tab-company" role="tab" aria-selected="false" aria-controls="role-panel-company" tabindex="-1"><span class="role-icon"><svg class="icon"><use href="#i-building"/></svg></span><span class="role-label"><b>Company Representative</b><small>Post and manage opportunities</small></span><svg class="icon role-chevron"><use href="#i-arrow"/></svg></button><button type="button" class="role-tab" id="role-tab-faculty" role="tab" aria-selected="false" aria-controls="role-panel-faculty" tabindex="-1"><span class="role-icon"><svg class="icon"><use href="#i-book"/></svg></span><span class="role-label"><b>Faculty Member</b><small>Review and monitor students</small></span><svg class="icon role-chevron"><use href="#i-arrow"/></svg></button><button type="button" class="role-tab" id="role-tab-head" role="tab" aria-selected="false" aria-controls="role-panel-head" tabindex="-1"><span class="role-icon"><svg class="icon"><use href="#i-shield"/></svg></span><span class="role-label"><b>Faculty Head</b><small>Oversee the OJT program</small></span><svg class="icon role-chevron"><use href="#i-arrow"/></svg></button></div>
+      <div class="role-panel-wrap"><section class="role-panel" id="role-panel-student" role="tabpanel" aria-labelledby="role-tab-student" tabindex="0"><span class="role-panel-tag">THE STUDENT JOURNEY</span><h3>From first search to final requirement.</h3><ol class="steps"><li><b>Complete your profile</b><span>Add your interests, skills, and preferred roles.</span></li><li><b>Discover and apply</b><span>Review AI recommendations and choose where to apply.</span></li><li><b>Confirm a placement</b><span>Review offers and wait for faculty placement setup.</span></li><li><b>Monitor and complete</b><span>Submit documents, DTRs, and required evaluations.</span></li></ol></section>
+      <section class="role-panel" id="role-panel-company" role="tabpanel" aria-labelledby="role-tab-company" tabindex="0" hidden><span class="role-panel-tag">THE COMPANY JOURNEY</span><h3>Connect with emerging talent.</h3><ol class="steps"><li><b>Join through invitation</b><span>Register through an authorized campus invitation.</span></li><li><b>Post internships</b><span>Share available positions and requirements.</span></li><li><b>Review applications</b><span>Evaluate students, arrange interviews, and offer slots.</span></li><li><b>Support trainees</b><span>Coordinate with faculty and provide evaluations.</span></li></ol></section>
+      <section class="role-panel" id="role-panel-faculty" role="tabpanel" aria-labelledby="role-tab-faculty" tabindex="0" hidden><span class="role-panel-tag">THE FACULTY JOURNEY</span><h3>Give every student clearer guidance.</h3><ol class="steps"><li><b>Choose your assigned class</b><span>Focus on one active class at a time.</span></li><li><b>Verify placements</b><span>Set up confirmed OJT placements and required hours.</span></li><li><b>Review documents</b><span>Check DTR submissions and other requirements.</span></li><li><b>Follow progress</b><span>Review students' training updates and evaluations.</span></li></ol></section>
+      <section class="role-panel" id="role-panel-head" role="tabpanel" aria-labelledby="role-tab-head" tabindex="0" hidden><span class="role-panel-tag">THE FACULTY HEAD JOURNEY</span><h3>See the bigger OJT picture.</h3><ol class="steps"><li><b>Manage invitations</b><span>Coordinate access for faculty and partner companies.</span></li><li><b>Oversee assignments</b><span>Support faculty and class responsibilities.</span></li><li><b>Monitor partnerships</b><span>Manage company records and agreement-related tasks.</span></li><li><b>Track overall status</b><span>Follow placement progress and compliance.</span></li></ol></section></div></div>
+      <p class="workflow-note reveal"><svg class="icon"><use href="#i-sparkle"/></svg><span><strong>AI recommends. People decide.</strong> iMatchOJT suggests possible internship matches, but students, companies, and faculty still handle the actual placement process.</span></p>
+    </div></section>
 
-        <h2>Welcome Back!</h2>
-        <p>Log in to your account to continue.</p>
+    <section class="section creators-section" id="creators" aria-labelledby="creators-title"><div class="container"><div class="section-heading reveal"><div><span class="section-label"><span class="label-mark"></span> 05 / THE PEOPLE BEHIND IT</span><h2 id="creators-title">Built by students. <span>For future OJT students.</span></h2></div><p>iMatchOJT is a capstone project developed by student researchers of PUP Santa Rosa Campus.</p></div><div class="creators-grid"><article class="creator-card reveal"><div class="creator-avatar"><svg class="icon"><use href="#i-users"/></svg></div><span>TEAM MEMBER 01</span><h3>Creator name</h3><p>Role or contribution to be added</p></article><article class="creator-card reveal"><div class="creator-avatar"><svg class="icon"><use href="#i-users"/></svg></div><span>TEAM MEMBER 02</span><h3>Creator name</h3><p>Role or contribution to be added</p></article><article class="creator-card reveal"><div class="creator-avatar"><svg class="icon"><use href="#i-users"/></svg></div><span>TEAM MEMBER 03</span><h3>Creator name</h3><p>Role or contribution to be added</p></article></div><p class="creators-placeholder">Replace these placeholders with confirmed team names, photos, and contributions before publishing.</p></div></section>
 
-        <label>Email Address</label>
-
-        <div class="input">
-            <i class="fa-regular fa-envelope"></i>
-            <input type="email" placeholder="Enter your email">
-        </div>
-
-        <label>Password</label>
-
-        <div class="input">
-            <i class="fa-solid fa-lock"></i>
-            <input type="password" id="password" placeholder="Enter password">
-            <i class="fa-solid fa-eye toggle"></i>
-        </div>
-
-        <div class="forgot">
-            <a href="#">Forgot password?</a>
-        </div>
-
-        <button class="main-login">Login</button>
-
-        <div class="divider">OR</div>
-
-        <button class="google">
-            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg">
-            Continue with Google
-        </button>
-
-        <p class="register">
-            Don't have an account?
-            <a href="#">Register here</a>
-        </p>
-
-    </div>
-
-</section>
-
-
-<section class="cards">
-
-<div class="card">
-<i class="fa-solid fa-graduation-cap"></i>
-<h3>For Students</h3>
-<p>Discover internship opportunities.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-briefcase"></i>
-<h3>For Companies</h3>
-<p>Find talented interns.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-users"></i>
-<h3>Faculty Members</h3>
-<p>Monitor student progress.</p>
-</div>
-
-<div class="card">
-<i class="fa-solid fa-shield"></i>
-<h3>Faculty Heads</h3>
-<p>Generate reports.</p>
-</div>
-
-</section>
-
-
-<footer>
-
-<div>
-<strong>POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</strong>
-<br>
-Sta. Rosa Campus
-</div>
-
-<div>
-©2024 iMatchOJT
-</div>
-
-<div class="social">
-<i class="fab fa-facebook-f"></i>
-<i class="far fa-envelope"></i>
-<i class="fas fa-globe"></i>
-</div>
-
-</footer>
-
-<script src="js/homepage/script.js"></script>
-
+    <section class="closing" aria-labelledby="closing-title"><div class="closing-pattern" aria-hidden="true"></div><div class="container closing-inner reveal"><span class="closing-label"><svg class="icon"><use href="#i-sparkle"/></svg> BUILT FOR A BETTER OJT EXPERIENCE</span><h2 id="closing-title">From campus to career.<br><em>One clearer journey.</em></h2><p>Explore how iMatchOJT connects opportunity discovery, progress monitoring, and document requirements.</p><a href="#top" class="button button-white">Back to the beginning <svg class="icon"><use href="#i-arrow-up"/></svg></a></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-top"><div><a class="brand brand-footer" href="#top"><span class="brand-icon"><svg class="icon"><use href="#i-cap"/></svg></span><span class="brand-name">iMatch<span>OJT</span></span></a><p>AI-powered OJT placement, monitoring, and document compliance for PUP Santa Rosa Campus.</p></div><div class="footer-nav"><b>EXPLORE</b><a href="#about">About</a><a href="#features">Features</a><a href="#showcase">System preview</a><a href="#how-it-works">How it works</a></div><div class="footer-nav"><b>PROJECT</b><a href="#creators">The creators</a><span>Polytechnic University of the Philippines</span><span>Santa Rosa Campus</span></div></div><div class="container footer-bottom"><span>© <span id="current-year">2026</span> iMatchOJT. A student capstone project.</span><a href="#top">Back to top ↑</a></div></footer>
 </body>
 </html>
