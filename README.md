@@ -1,52 +1,86 @@
-# iMatchOJT | InternAlly-inspired Informational Homepage
+# iMatchOJT | Informational Website
 
-An original redesign of the previous standalone iMatchOJT informational homepage, inspired by the **overall clean SaaS design and soft interaction style** of internally.co.uk. This project does **not** reuse InternAlly's code, visual assets, text, or logo.
+This repository contains the official informational website for **iMatchOJT: An AI-Powered OJT Placement, Monitoring, and Document Compliance System for PUP Santa Rosa Campus**.
 
-## Getting started
+The website serves as a public platform for introducing and showcasing iMatchOJT. It provides visitors with an overview of the system, its purpose, key features, and how it supports the OJT process. It also introduces the student researchers behind its development.
 
-1. Extract the ZIP into a folder.
-2. Open `index.html` in a browser, or use VS Code Live Server.
-3. No installation, dependencies, login, API keys, or backend are needed.
+## About iMatchOJT
 
-## Files
+iMatchOJT is a web-based system developed to improve the management of On-the-Job Training (OJT) activities at the Polytechnic University of the Philippines Santa Rosa Campus.
 
-- `index.html`: All homepage sections, interactive role guide, and feature illustrations.
-- `css/homepage/style.css`: Responsive layouts, maroon theme, floating cards, transitions, and animations.
-- `js/homepage/script.js`: Mobile navigation, scroll progress bar, IntersectionObserver reveals, active navigation highlighting, and accessible tabs.
-- `assets/pup-santa-rosa-building.webp`: Optimized version of the **reference image supplied by the user**.
+The system helps students discover internship opportunities through AI-powered recommendations, manage their applications, submit required documents, and monitor their OJT progress. It also provides tools for company representatives, OJT faculty members, and the OJT faculty head to manage placements, monitor students, and oversee OJT requirements.
 
-## Sections
+By bringing these processes into one platform, iMatchOJT aims to make OJT placement, monitoring, and document compliance more organized, accessible, and efficient.
 
-Home hero → interface illustration → role strip → about → feature cards → interactive system feature showcase → How it works (four roles) → creator placeholders → closing section → footer.
+## Purpose of the Website
 
-## Motion and accessibility
+This informational website was developed to showcase iMatchOJT and help visitors understand its functions and benefits.
 
-- Staggered hero fade/slide entrance
-- Floating cards and a subtly animated scroll cue
-- Smooth in-page navigation and scroll progress line
-- Content reveal on scroll, soft hover lift, tab crossfade
-- Sticky navigation with scroll state and active-section highlighting
-- `prefers-reduced-motion` support
-- Accessible role/feature tabs with keyboard arrow navigation
-- Lazy-loaded building photo
-- Progressive enhancement: content is visible without JS
+The website aims to:
 
-## Before publishing
+- **Introduce iMatchOJT** and explain its purpose as a capstone project.
+- **Showcase the system's key features** and how they support OJT activities.
+- **Explain how the system works** for students, company representatives, faculty members, and the faculty head.
+- **Present visual previews** of the system's interface and functionality.
+- **Introduce the creators** and recognize the student researchers who developed the project.
 
-- Replace the three creator cards with the real team members and their names, photos, and roles. Add/remove cards as needed.
-- The dashboard and feature display are *illustrations*, **not** direct copies/screenshots of your live application. Swap them for real screenshots if desired.
-- The photo was provided as a reference image; ensure you have permission to use it publicly.
-- Verify each public-facing statement against the current system before deployment.
+The website is intended for students, faculty members, partner companies, research evaluators, and other visitors interested in learning about iMatchOJT.
 
-## GitHub Desktop suggestion
+## Website Sections
 
-Work in a feature branch, review the changed homepage files, test at mobile/tablet/desktop sizes, then commit and push using GitHub Desktop.
+### Home
+Provides an introduction to iMatchOJT and highlights its main purpose and benefits.
 
-**Suggested commit summary:** `feat(homepage): add animated informational landing page`
+### About
+Explains the background of the project, its objectives, and the OJT challenges it aims to address.
 
-**Description:**
-- Redesigned public homepage in a clean product showcase style
-- Added scroll transitions, hero motion, hover interactions, and responsive views
-- Added interactive feature showcase and four-role OJT guide
-- Removed all login and registration functionality
-- Added reduced-motion support and keyboard-accessible navigation
+### Features
+Showcases the system's main functions, including:
+
+- AI-Powered Internship Recommendations
+- Internship Application Management
+- OJT Progress and DTR Monitoring
+- Document Compliance Management
+- Student Evaluation and Progress Tracking
+- Announcements and Notifications
+- Company and Faculty Coordination
+
+### System Showcase
+Presents visual previews of the system to help visitors understand its interface and available features.
+
+### How It Works
+Provides step-by-step explanations of how iMatchOJT is used by its four main user roles:
+
+1. OJT Students
+2. Company Representatives
+3. OJT Faculty Members
+4. OJT Faculty Head
+
+### Meet the Creators
+Introduces the student researchers behind iMatchOJT and highlights their contributions to the project.
+
+## Website Design and Experience
+
+The website uses a modern, minimalist design inspired by contemporary technology and software showcase websites.
+
+It features PUP-inspired colors, responsive layouts, smooth transitions, interactive sections, and simple navigation to provide an engaging experience across desktop, tablet, and mobile devices.
+
+## Website Scope
+
+This website is intended for informational and project presentation purposes only. It does not provide direct access to the main iMatchOJT application, user authentication, or live OJT transactions.
+
+Its primary purpose is to help visitors explore and understand the system without requiring an account.
+
+## Project Information
+
+**Project Title:** iMatchOJT: An AI-Powered OJT Placement, Monitoring, and Document Compliance System for PUP Santa Rosa Campus
+
+**Institution:** Polytechnic University of the Philippines, Santa Rosa Campus
+
+**Program:** Bachelor of Science in Information Technology
+
+**Project Type:** Capstone Project
+
+## GitHub Repository Description
+
+An informational website showcasing iMatchOJT, its purpose, key features, system workflows, and the student researchers behind its development.
