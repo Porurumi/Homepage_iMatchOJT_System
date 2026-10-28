@@ -34,3 +34,51 @@
 @media(prefers-reduced-motion:reduce){.anim-rise{animation:none!important;opacity:1!important;transform:none!important}}
 /* Keep ambient hero chips away from the main headline on wide screens. */
 @media(min-width:901px){.float-one{top:455px;left:-20px}}
+
+/* Floating cards move behind hero content on smaller screens */
+
+@media (max-width: 1120px) {
+  .hero-inner {
+    isolation: isolate;
+  }
+
+  .hero-inner > :not(.float-chip) {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-inner .float-chip {
+    z-index: -1;
+    opacity: 0.38;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-inner .float-chip {
+    opacity: 0.23;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-inner .float-chip {
+    display: flex;
+    opacity: 0.14;
+    scale: 0.78;
+  }
+
+  .hero-inner .float-one {
+    top: 265px;
+    left: -57px;
+  }
+
+  .hero-inner .float-two {
+    top: 365px;
+    right: -65px;
+  }
+
+  .hero-inner .float-three {
+    bottom: 67px;
+    left: -54px;
+  }
+}
