@@ -4645,3 +4645,10 @@ svg {
     width: 100%;
   }
 }
+
+/* Ensure the Explore button behaves as a button */
+.nav-cta {
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}

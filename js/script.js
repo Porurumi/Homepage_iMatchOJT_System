@@ -602,25 +602,26 @@ const year = document.getElementById('current-year');
 if (year) year.textContent = String(new Date().getFullYear());
 
 
-/* Open iMatchOJT application dialog */
 
-const openAppDialog = document.getElementById(
+/* Explore iMatchOJT confirmation modal */
+
+const exploreButton = document.getElementById(
   'open-app-dialog'
 );
 
-const appEntryDialog = document.getElementById(
+const appDialog = document.getElementById(
   'app-entry-dialog'
 );
 
-if (openAppDialog && appEntryDialog) {
-  openAppDialog.addEventListener('click', () => {
-    appEntryDialog.showModal();
+if (exploreButton && appDialog) {
+  exploreButton.addEventListener('click', () => {
+    appDialog.showModal();
   });
 
-  // Close when clicking outside the dialog.
-  appEntryDialog.addEventListener('click', event => {
-    if (event.target === appEntryDialog) {
-      appEntryDialog.close();
+  appDialog.addEventListener('click', (event) => {
+    if (event.target === appDialog) {
+      appDialog.close();
     }
   });
 }
+
