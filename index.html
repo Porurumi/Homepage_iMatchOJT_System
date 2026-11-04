@@ -98,7 +98,18 @@
         <a class="nav-link" href="#how-it-works">How it works</a>
         <a class="nav-link" href="#creators">Creators</a>
       </nav>
-      <a class="nav-cta" href="#features">Explore iMatchOJT <svg class="icon"><use href="#i-arrow-up"/></svg></a>
+      
+<button
+  class="nav-cta"
+  id="open-app-dialog"
+  type="button"
+>
+  Explore iMatchOJT
+  <svg class="icon">
+    <use href="#i-arrow-up"/>
+  </svg>
+</button>
+
       <button class="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open navigation"><svg class="icon menu-lines"><use href="#i-menu"/></svg><svg class="icon menu-cross"><use href="#i-close"/></svg></button>
     </div>
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden><a href="#about">About</a><a href="#features">Features</a><a href="#showcase">System preview</a><a href="#how-it-works">How it works</a><a href="#creators">Creators</a></nav>
@@ -366,6 +377,48 @@
 
 
   </footer>
+  
+<dialog
+  id="app-entry-dialog"
+  class="app-entry-dialog"
+  aria-labelledby="app-entry-title"
+  aria-describedby="app-entry-description"
+>
+  <div class="app-entry-icon">
+    <svg class="icon">
+      <use href="#i-cap"/>
+    </svg>
+  </div>
+
+  <h2 id="app-entry-title">
+    Are you an OJT student?
+  </h2>
+
+  <p id="app-entry-description">
+    Log in to iMatchOJT to manage your internship
+    applications, requirements, and OJT progress.
+    Faculty and company users can also access the app.
+  </p>
+
+  <div class="app-entry-actions">
+    <form method="dialog">
+      <button type="submit" class="app-entry-cancel">
+        Stay here
+      </button>
+    </form>
+
+    <a
+      href="https://imatchojt.vercel.app"
+      class="app-entry-continue"
+    >
+      Continue
+      <svg class="icon">
+        <use href="#i-arrow"/>
+      </svg>
+    </a>
+  </div>
+</dialog>
+
 </body>
   
 </html>

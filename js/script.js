@@ -600,3 +600,27 @@ createTabGroup('.role-tab', '.role-panel');
 
 const year = document.getElementById('current-year');
 if (year) year.textContent = String(new Date().getFullYear());
+
+
+/* Open iMatchOJT application dialog */
+
+const openAppDialog = document.getElementById(
+  'open-app-dialog'
+);
+
+const appEntryDialog = document.getElementById(
+  'app-entry-dialog'
+);
+
+if (openAppDialog && appEntryDialog) {
+  openAppDialog.addEventListener('click', () => {
+    appEntryDialog.showModal();
+  });
+
+  // Close when clicking outside the dialog.
+  appEntryDialog.addEventListener('click', event => {
+    if (event.target === appEntryDialog) {
+      appEntryDialog.close();
+    }
+  });
+}
