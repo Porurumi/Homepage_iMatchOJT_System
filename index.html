@@ -9,8 +9,6 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="js/script.js" defer></script>
 </head>
-
-<body>
   
 <body>
   <!-- Page-top anchor -->
@@ -114,7 +112,31 @@
 
       <button class="menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open navigation"><svg class="icon menu-lines"><use href="#i-menu"/></svg><svg class="icon menu-cross"><use href="#i-close"/></svg></button>
     </div>
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden><a href="#about">About</a><a href="#features">Features</a><a href="#showcase">System preview</a><a href="#how-it-works">How it works</a><a href="#creators">Creators</a></nav>
+    
+<nav
+  class="mobile-nav"
+  id="mobile-nav"
+  aria-label="Mobile navigation"
+  hidden
+>
+  <a href="#about">About</a>
+  <a href="#features">Features</a>
+  <a href="#showcase">System preview</a>
+  <a href="#how-it-works">How it works</a>
+  <a href="#creators">Creators</a>
+
+  <button
+    type="button"
+    id="open-app-dialog-mobile"
+    class="mobile-app-cta"
+  >
+    Explore iMatchOJT
+    <svg class="icon" aria-hidden="true">
+      <use href="#i-arrow-up"/>
+    </svg>
+  </button>
+</nav>
+
   </header>
 
   <main id="main">
@@ -364,7 +386,6 @@
     </section>
 
   </main>
-  <footer class="footer">
     
 <footer class="footer">
   <div class="container footer-bottom">
@@ -377,9 +398,6 @@
   </div>
 </footer>
 
-
-  </footer>
-  
 <dialog
   id="app-entry-dialog"
   class="app-entry-dialog"

@@ -603,25 +603,30 @@ if (year) year.textContent = String(new Date().getFullYear());
 
 
 
-/* Explore iMatchOJT confirmation modal */
 
-const exploreButton = document.getElementById(
-  'open-app-dialog'
-);
+/* Explore iMatchOJT modal: desktop and mobile */
 
 const appDialog = document.getElementById(
   'app-entry-dialog'
 );
 
-if (exploreButton && appDialog) {
-  exploreButton.addEventListener('click', () => {
-    appDialog.showModal();
+const appOpenButtons = document.querySelectorAll(
+  '#open-app-dialog, #open-app-dialog-mobile'
+);
+
+if (appDialog) {
+  appOpenButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      closeMobileMenu();
+      appDialog.showModal();
+    });
   });
 
-  appDialog.addEventListener('click', (event) => {
+  appDialog.addEventListener('click', event => {
     if (event.target === appDialog) {
       appDialog.close();
     }
   });
 }
+
 

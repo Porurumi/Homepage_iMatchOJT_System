@@ -4652,3 +4652,29 @@ svg {
   font-family: inherit;
   cursor: pointer;
 }
+
+
+/* Mobile application access button */
+
+.mobile-app-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  padding: 13px 15px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 9px;
+  background: #991b1b;
+  color: #ffffff;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.mobile-app-cta .icon {
+  width: 16px;
+  height: 16px;
+}
