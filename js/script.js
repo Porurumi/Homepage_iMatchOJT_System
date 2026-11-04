@@ -630,3 +630,60 @@ if (appDialog) {
 }
 
 
+/* =========================================
+   Clean URL navigation
+   ========================================= */
+
+// Navigate between sections without adding #about,
+// #features, #creators, etc. to the address bar.
+
+document.querySelectorAll(
+  'a[href^="#"]:not(.skip-link)'
+).forEach(link => {
+
+  link.addEventListener('click', event => {
+    const hash = link.getAttribute('href');
+
+    if (!hash || hash === '#') return;
+
+    const target = document.getElementById(
+      hash.slice(1)
+    );
+
+    if (!target) return;
+
+    event.preventDefault();
+
+    const headerHeight = siteHeader
+      ? siteHeader.offsetHeight
+      : 0;
+
+    const targetPosition = hash === '#top'
+      ? 0
+      : Math.max(
+          0,
+          target.getBoundingClientRect().top +
+          window.scrollY -
+          headerHeight
+        );
+
+    // Clean up an existing section hash.
+    if (window.location.hash) {
+      history.replaceState(
+        history.state,
+        '',
+        window.location.pathname +
+        window.location.search
+      );
+    }
+
+    window.scrollTo({
+      top: targetPosition,
+      behavior: reducedMotion.matches
+        ? 'auto'
+        : 'smooth'
+    });
+  });
+
+});
+
