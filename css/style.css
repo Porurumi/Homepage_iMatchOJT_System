@@ -4678,3 +4678,42 @@ svg {
   width: 16px;
   height: 16px;
 }
+
+
+/* =========================================
+   Hero floating cards: hover interactions
+   ========================================= */
+
+@media (min-width: 1101px) and (hover: hover) and (pointer: fine) {
+
+  .hero-inner .float-chip {
+    pointer-events: auto;
+    cursor: default;
+
+    transition:
+      opacity 240ms ease,
+      scale 300ms cubic-bezier(.22, 1, .36, 1),
+      box-shadow 300ms ease,
+      border-color 300ms ease;
+  }
+
+  .hero-inner .float-chip .chip-icon {
+    transition:
+      transform 300ms cubic-bezier(.22, 1, .36, 1);
+  }
+
+  .hero-inner .float-chip:hover {
+    animation-play-state: paused;
+
+    scale: 1.04;
+
+    border-color: #e7bbc7;
+
+    box-shadow:
+      0 24px 44px rgba(68, 29, 47, 0.16);
+  }
+
+  .hero-inner .float-chip:hover .chip-icon {
+    transform: scale(1.1) rotate(-5deg);
+  }
+}
