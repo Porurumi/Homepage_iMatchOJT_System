@@ -4680,11 +4680,13 @@ svg {
 }
 
 
+
 /* =========================================
-   Hero floating cards: hover interactions
+   Hero Floaties - Hover Effects
    ========================================= */
 
-@media (min-width: 1101px) and (hover: hover) and (pointer: fine) {
+/* Enable hover on devices that support it */
+@media (min-width: 701px) and (hover: hover) {
 
   .hero-inner .float-chip {
     pointer-events: auto;
@@ -4693,19 +4695,14 @@ svg {
     transition:
       opacity 240ms ease,
       scale 300ms cubic-bezier(.22, 1, .36, 1),
-      box-shadow 300ms ease,
-      border-color 300ms ease;
-  }
-
-  .hero-inner .float-chip .chip-icon {
-    transition:
-      transform 300ms cubic-bezier(.22, 1, .36, 1);
+      border-color 300ms ease,
+      box-shadow 300ms ease;
   }
 
   .hero-inner .float-chip:hover {
     animation-play-state: paused;
 
-    scale: 1.04;
+    scale: 1.05;
 
     border-color: #e7bbc7;
 
@@ -4713,7 +4710,12 @@ svg {
       0 24px 44px rgba(68, 29, 47, 0.16);
   }
 
+  .hero-inner .float-chip .chip-icon {
+    transition:
+      transform 300ms cubic-bezier(.22, 1, .36, 1);
+  }
+
   .hero-inner .float-chip:hover .chip-icon {
-    transform: scale(1.1) rotate(-5deg);
+    transform: scale(1.12) rotate(-5deg);
   }
 }
