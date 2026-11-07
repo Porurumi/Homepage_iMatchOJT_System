@@ -4688,16 +4688,20 @@ svg {
 /* Enable hover on devices that support it */
 @media (min-width: 701px) and (hover: hover) {
 
-  .hero-inner .float-chip {
-    pointer-events: auto;
-    cursor: default;
+  
+.hero-inner .float-chip {
+  z-index: 1;
+  opacity: var(--float-opacity, 1);
+  pointer-events: auto;
+  cursor: default;
 
-    transition:
-      opacity 240ms ease,
-      scale 300ms cubic-bezier(.22, 1, .36, 1),
-      border-color 300ms ease,
-      box-shadow 300ms ease;
-  }
+  transition:
+    opacity 240ms ease,
+    scale 300ms cubic-bezier(.22, 1, .36, 1),
+    box-shadow 300ms ease,
+    border-color 300ms ease;
+}
+
 
   .hero-inner .float-chip:hover {
     animation-play-state: paused;
